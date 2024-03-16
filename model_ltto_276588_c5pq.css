@@ -1,0 +1,39 @@
+false - 53,50,47,99,63,6,15,87,32,92,35,68,18,81,11,33,45,9,68,24,67,28,88,50,82,2,33,56,96,96,72,94,90,34,9,31,52,38,75,35,96,91,57,4,6,0,52,89,0,71,72,72,17,92,47,89,29,92,11,83,29,96,58,79,0,56,96,98,23,99,54,59,95,68,78,4,56,21,92,55,73,39,10,29,37,27,66,82,19,16,25,21,81
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const removeDuplicates = array => Array.from(new Set(array));
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+23,23,41,12,43,51,59,25,11,29,3,87,11,54,50,91,58,73,18,72,40,63,92,25,25,69,10,38,12,82,92,79,95,25,1,65,21,27,37,91,28,23,3,62,12,58,31,78,96,55,96,45,49,95,12 + 50
+const findLargestNumber = numbers => Math.max(...numbers);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+true + true
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+kiwi
+
+const getUniqueValues = array => [...new Set(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const findLargestNumber = numbers => Math.max(...numbers);
+true * 70
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+true + true
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+true - 39,82,88,86,98,85,44,64,60,85,20,17,15,64,0,39
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const findLargestNumber = numbers => Math.max(...numbers);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+85 / 75,7,34,71,91,45,69,75,91,89,78,63,67,44,69,5,43,19,83,87
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+67 * 93
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
