@@ -1,0 +1,42 @@
+false + 98
+const isEven = num => num % 2 === 0;
+const squareRoot = num => Math.sqrt(num);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const randomNumber = getRandomNumber();
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const removeDuplicates = array => Array.from(new Set(array));
+
+false * grape
+const sum = (a, b) => a + b;
+class MyClass { constructor() { this.property = getRandomString(); } }
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+apple
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+true * banana
+
+// This is a comment
+const randomNumber = getRandomNumber();
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+kiwi
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+17,93,73,79,87,82,39,37,42,79,45,82,62,56,59,45,45,0,79,5,41,29,50,60,75,92,60 - banana
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const sum = (a, b) => a + b;
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const findLargestNumber = numbers => Math.max(...numbers);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+3,29,91,43,79,11,0,65,48,94,43,81,42,87,57,35,80,69,90,96,53 + apple
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
